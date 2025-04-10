@@ -22,6 +22,9 @@ from .object_tracking_vittrack.vittrack import VitTrack
 from .text_detection_ppocr.ppocr_det import PPOCRDet
 from .image_segmentation_efficientsam.efficientSAM import EfficientSAM
 
+from .face_detection_haarcascade.haar_cascade import HaarCascade
+from .face_detection_HOGSVM.HOGSVM import HOGSVM
+
 class ModuleRegistery:
     def __init__(self, name):
         self._name = name
@@ -100,3 +103,6 @@ MODELS.register(FacialExpressionRecog)
 MODELS.register(VitTrack)
 MODELS.register(PPOCRDet)
 MODELS.register(EfficientSAM)
+
+MODELS.register(HaarCascade)
+MODELS.register(HOGSVM)
