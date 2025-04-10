@@ -128,6 +128,13 @@ models = dict(
         name="PPHumanSeg",
         topic="human_segmentation",
         modelPath=os.path.join(root_dir, "models/human_segmentation_pphumanseg/human_segmentation_pphumanseg_2023mar_int8bq.onnx")),
+    haar_cascade=dict(
+        name="HaarCascade",
+        topic="face_detection",
+        modelPath=os.path.join(root_dir, "models/face_detection_haarcascade/haarcascade_frontalface_default.xml")),
+    hog_svm=dict(
+        name="HOGSVM",
+        topic="face_detection"),
 )
 
 datasets = dict(

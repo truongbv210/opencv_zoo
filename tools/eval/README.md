@@ -99,6 +99,10 @@ Run evaluation with the following command:
 
 ```shell
 python eval.py -m yunet -d widerface -dr /path/to/widerface
+
+python3 eval.py -m haar_cascade -d widerface -dr /path/to/opencv_zoo/widerface
+
+python3 eval.py -m hog_svm -d widerface -dr /path/to/opencv_zoo/widerface
 ```
 
 ## LFW
